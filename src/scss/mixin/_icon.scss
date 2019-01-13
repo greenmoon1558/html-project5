@@ -1,0 +1,10 @@
+@mixin icon($property) {
+  .icon__#{$property} {
+    background: url("../img/social.svg##{$property}") center center no-repeat;
+  }
+}
+@mixin icon-active($property) {
+  .icon__#{$property} {
+    background: url("../img/social.svg##{$property}-active") center center no-repeat;
+  }
+}

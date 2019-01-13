@@ -1,0 +1,65 @@
+{
+  "name": "html-projects",
+  "version": "1.0.0",
+  "description": "![LAYOUT.png](https://raw.githubusercontent.com/greenmoon1558/html-project1/master/pantomax_lp_new.psd.png)",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node server.js",
+    "dev": "webpack --mode development",
+    "beautify": "html dist/*.html --indent-size 2",
+    "build": "webpack --env.WEBPACK_MODE=production --mode production",
+    "watch": "webpack --env.WEBPACK_MODE=development --mode development --watch",
+    "start": "webpack-dev-server --env.WEBPACK_MODE=development --mode development --open --host 192.168.0.103",
+    "startlocal": "webpack-dev-server --env.WEBPACK_MODE=development --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greenmoon1558/html_proj.git"
+  },
+  "keywords": [
+    "html",
+    "layouts"
+  ],
+  "author": "Natalia Zhydejkina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greenmoon1558/html_proj/issues"
+  },
+  "homepage": "https://github.com/greenmoon1558/html_proj#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "autoprefixer": "^9.4.3",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^1.0.1",
+    "cssnano": "^4.1.8",
+    "html-cli": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.10.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-extract-media-query": "^1.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.5.0",
+    "precss": "^4.0.0",
+    "preload-webpack-plugin": "^3.0.0-beta.3",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "express": "^4.16.4",
+    "fontfaceobserver": "^2.1.0",
+    "normalize.css": "^8.0.1",
+    "serve-static": "^1.13.2",
+    "style-loader": "^0.23.1"
+  }
+}

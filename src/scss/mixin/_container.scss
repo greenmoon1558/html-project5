@@ -1,0 +1,13 @@
+.container {
+  &-- {
+    &big {
+        display: grid;
+        grid-template-areas: ". container .";
+        grid-template-columns: 1fr minmax(auto, 104rem) 1fr;
+        max-width: 100vw;
+      }
+      &inner {
+        grid-area: container;
+      }
+  }
+}
