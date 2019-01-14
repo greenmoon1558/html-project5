@@ -5,13 +5,17 @@
         margin: 0;
         padding: 0;
         display: grid;
+        column-count: 2;
+        column-gap: 4rem;
         grid-template-columns: 1fr;
         grid-gap: 4rem;
         align-items: flex-start;
         justify-content: space-between;
         list-style-type: none;
+      
       }
       &item {
+          display: inline-block;
             @include translateFromLeft();
         &:nth-child(2n) {
           @include translateFromRight();
