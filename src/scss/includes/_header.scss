@@ -60,12 +60,12 @@
   justify-content: space-between;
   .telephone__text {
     font-size: 1.6rem;
-    letter-spacing: 0.15px;
+    letter-spacing: 0.015rem;
     position: relative;
    &:after{
        content: "";
        width: 100%;
-       background-color: rgba($white, 0.1);
+       background-color: rgba($white, 0.15);
        height: 0.1rem;
        position: absolute;
        display: inline-block;
@@ -76,7 +76,7 @@
 }
 .c-social-media {
   display: inline-block;
-  margin: 0 0 0 37px;
+  margin: 0 0 0 3.7rem;
   @include icon("facebook");
   @include icon("google-plus");
   @include icon("instagram");

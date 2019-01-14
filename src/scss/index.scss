@@ -10,7 +10,8 @@ html {
 @import "./mixin/container";
 @import "./mixin/icon";
 @import "./includes/header";
-
+@import "./includes/index/block_1";
+@import "./includes/index/block_2";
 .test__img {
   background: #fff0 url(../../test/index.png) no-repeat 0px 0px;
   opacity: 0.5;
