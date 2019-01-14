@@ -10,7 +10,6 @@
         align-items: flex-start;
         justify-content: space-between;
         list-style-type: none;
-        flex-direction: column;
       }
       &item {
             @include translateFromLeft();

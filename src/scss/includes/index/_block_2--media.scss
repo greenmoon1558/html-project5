@@ -9,11 +9,11 @@
     }
   }
 }
-@media (min-width: 24rem) {
+@media (max-width: 24rem) {
   .c-block_2 {
     .block_2 {
       &__info {
-        flex-direction: row;
+        flex-direction: column;
       }
     }
   }
