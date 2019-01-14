@@ -9,10 +9,15 @@ html {
 @import "./mixin/vars";
 @import "./mixin/container";
 @import "./mixin/icon";
+@import "./mixin/animate";
 @import "./includes/header";
+@import "./includes/header--media";
 @import "./includes/index/block_1";
+@import "./includes/index/block_1--media";
 @import "./includes/index/block_2";
+@import "./includes/index/block_2--media";
 @import "./includes/index/block_3";
+@import "./includes/index/block_3--media";
 @import "./includes/footer";
 
 .test__img {

@@ -5,9 +5,11 @@
         grid-template-areas: ". container .";
         grid-template-columns: 1fr minmax(auto, 104rem) 1fr;
         max-width: 100vw;
+         padding: 0 2rem;
       }
       &inner {
         grid-area: container;
+        max-width: calc(100vw - 4rem);
       }
   }
 }

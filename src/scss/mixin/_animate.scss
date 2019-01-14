@@ -1,0 +1,38 @@
+@mixin translateFromTop() {
+  transform: translateY(-5rem);
+  opacity: 0;
+  will-change: opacity, transform;
+  &.js-animate {
+    opacity: 1;
+    transform: translateY(0rem);
+    transition: transform 2s ease, opacity 2s ease;
+  }
+}
+@mixin translateFromRight() {
+  transform: translateX(15rem);
+  opacity: 0;
+  will-change: opacity, transform;
+  &.js-animate {
+    opacity: 1;
+    transform: translateX(0rem);
+    transition: transform 2s ease, opacity 2s ease;
+  }
+}
+@mixin translateFromLeft() {
+  transform: translateX(-15rem);
+  opacity: 0;
+  will-change: opacity, transform;
+  &.js-animate {
+    opacity: 1;
+    transform: translateX(0rem);
+    transition: transform 2s ease, opacity 2s ease;
+  }
+}
+@mixin rotateY() {
+  transform: rotateY(0);
+  will-change: transform;
+  &.js-animate {
+    transform: rotateY(360deg);
+    transition: transform 2s ease;
+  }
+}

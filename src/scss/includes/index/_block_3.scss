@@ -5,7 +5,7 @@
       font-style: normal;
       font-weight: bold;
       line-height: 5.2rem;
-      font-size: 5rem;
+      font-size: 3rem;
       margin: 4rem 0 2.7rem;
       max-width: 91rem;
       word-wrap: break-word;
@@ -13,13 +13,12 @@
     &article {
       display: flex;
       align-items: flex-start;
+      flex-direction: column-reverse;
       margin: 0 0 4rem;
-      &--left {
-        margin-right: 3.5rem;
-      }
       &--right {
+        @include translateFromRight();
         position: relative;
-        top: 14.25rem;
+        top: 0;
         min-width: 22.75rem;
         .block_3__text {
           &--main {
@@ -89,10 +88,12 @@
       font-size: 1.4rem;
       border: none;
       border-left: 0.8rem solid $blue;
-      margin: 2.5rem 4.75rem;
+      margin: 2.5rem 0.75rem;
       padding: 1.2rem 1.7rem;
     }
     &table {
+      overflow-x: auto;
+      display: none;
       border-collapse: collapse;
       width: 100%;
       margin: 3.25rem 0;
@@ -105,6 +106,7 @@
       font-weight: 400;
       line-height: normal;
       font-size: 1.4rem;
+      padding: 0 0.5rem;
       vertical-align: bottom;
       &--header {
         height: 3.6rem;
@@ -142,11 +144,11 @@
         left: 1rem;
       }
     }
-    &item{
-        margin: 0 0 0.4rem;
+    &item {
+      margin: 0 0 0.4rem;
     }
   }
-  .list--prev{
-      margin: 0 0 0.25rem;
+  .list--prev {
+    margin: 0 0 0.25rem;
   }
 }

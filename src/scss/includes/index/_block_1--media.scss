@@ -1,0 +1,59 @@
+@media (min-width: 64rem) {
+  .block_1 {
+    &__ {
+      &info {
+        &--left .info__titles {
+          display: block;
+        }
+        &--right .info__title {
+          &--gray {
+            margin: -4.25rem 11.5rem 0 0;
+          }
+          &--black {
+            margin: -1.1rem 0.8rem;
+          }
+        }
+      }
+      &label {
+        left: 3.25rem;
+        transform: translateX(0%);
+      }
+    }
+  }
+}
+
+@media (min-width: 48rem) {
+  .block_1__info {
+    &-container {
+        align-items: flex-start;
+      flex-direction: row;
+    }
+    &--right {
+      .info__title {
+        &--gray {
+          display: block;
+          text-align: left;
+        }
+        &--black {
+          display: block;
+          width: 16rem;
+        }
+      }
+    }
+    &--left {
+      .info__titles {
+        align-items: flex-start;
+      }
+    }
+  }
+  .c-block_1 {
+    .hotel-rating {
+      &__list {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@media (min-width: 27rem) {
+}

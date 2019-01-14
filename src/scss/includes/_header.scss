@@ -1,19 +1,20 @@
 .c-header {
   background-color: $blue;
-  height: 10.4rem;
+  min-height: 10.4rem;
 }
 .header {
+    @include translateFromTop();
   &__ {
     &menu {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
     }
     &section {
       height: 100%;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
       &--left {
@@ -36,6 +37,7 @@
       padding: 0.2rem 0;
     }
     &text {
+      display: none;
       color: $white;
       font-family: $fontArial;
       font-size: 1.6rem;
@@ -52,14 +54,14 @@
   font-family: $fontArial;
   font-size: 3rem;
   text-decoration: none;
-  width: 35rem;
-  display: inline-flex;
+  width: auto;
   align-items: center;
   justify-content: space-between;
   .telephone__text {
     font-size: 1.6rem;
     letter-spacing: 0.015rem;
     position: relative;
+    display: none;
     &:after {
       content: "";
       width: 100%;
@@ -73,7 +75,7 @@
   }
 }
 .c-social-media {
-  display: inline-block;
+  display: none;
   margin: 0 0 0 3.7rem;
   @include icon("facebook");
   @include icon("google-plus");

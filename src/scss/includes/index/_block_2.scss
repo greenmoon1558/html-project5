@@ -4,24 +4,29 @@
       &list {
         margin: 0;
         padding: 0;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 4rem;
         align-items: flex-start;
         justify-content: space-between;
         list-style-type: none;
+        flex-direction: column;
       }
       &item {
-        flex: 0 1 50rem;
-        &:nth-child(2n + 1) {
-          margin-right: 4rem;
+            @include translateFromLeft();
+        &:nth-child(2n) {
+          @include translateFromRight();
         }
+        max-width: calc(100vw - 4rem);
       }
       &img {
+          width: 100%;
       }
       &info {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-direction: column;
         margin: 2.1rem 0;
       }
       &titles,

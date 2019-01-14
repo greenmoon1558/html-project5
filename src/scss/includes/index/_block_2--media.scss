@@ -1,0 +1,20 @@
+@media (min-width: 48rem) {
+  .c-block_2 {
+    .block_2 {
+      &__ {
+        &list {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}
+@media (min-width: 24rem) {
+  .c-block_2 {
+    .block_2 {
+      &__info {
+        flex-direction: row;
+      }
+    }
+  }
+}

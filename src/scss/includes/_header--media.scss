@@ -1,0 +1,27 @@
+@media (min-width: 64rem) {
+  .c-telephone {
+    width: 35rem;
+    .telephone__text {
+      display: inline;
+    }
+  }
+}
+@media (min-width: 48rem) {
+  .c-telephone {
+    .logo__text {
+      display: inline;
+    }
+  }
+  .c-social-media {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 27rem) {
+  .header__menu, .header__section{
+    flex-direction: row;
+  }
+   .c-telephone {
+    display: inline-flex;
+  }
+}

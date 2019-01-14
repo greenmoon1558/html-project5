@@ -1,0 +1,30 @@
+@media (min-width: 48rem) {
+  .block_3 {
+    &__ {
+      &title--main {
+          font-size: 5rem;
+      }
+      &comment{
+        margin: 2.5rem 4.75rem;
+      }
+      &article {
+        flex-direction: row;
+        &--left{
+            margin-right: 3.5rem;
+        }
+        &--right {
+          top: 14.25rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 27rem) {
+    .block_3__title--main{
+        font-size: 4rem;
+    }
+    .block_3__table{
+        display: table;
+    }
+}

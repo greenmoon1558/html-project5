@@ -24,8 +24,9 @@
   .hotel-rating {
     margin: 2.9rem 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     &__ {
       &titles {
         font-family: $fontArial;
@@ -59,6 +60,7 @@
         padding: 0;
         list-style-type: none;
         display: flex;
+        flex-direction: column;
       }
       &item {
         font-family: $fontArial;
@@ -84,10 +86,15 @@
   &__ {
     &img-container {
       position: relative;
+      max-width: calc(100vw);
+      @include rotateY();
     }
     &img {
       width: 100%;
+      min-height: 40rem;
+      object-fit: cover;
       height: auto;
+      max-width: calc(100vw - 4rem);
       padding: 2.4rem 0 0;
     }
     &label {
@@ -102,39 +109,48 @@
       height: 25rem;
       position: absolute;
       bottom: 3.5rem;
-      left: 3.25rem;
+      left: 50%;
+      transform: translateX(-50%);
     }
     &info-container {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
+      flex-direction: column-reverse;
+      max-width: calc(100vw - 4rem);
     }
     &info {
       &--right {
-        .info__title {
-          &--gray {
-            font-weight: bold;
-            font-size: 88px;
-            letter-spacing: -0.05em;
-            font-family: "Trebuchet MS";
-            font-style: normal;
-            line-height: normal;
-            position: relative;
-            z-index: 2;
-            color: $gray;
-            margin: -4.25rem 11.5rem 0px 0;
-            text-transform: uppercase;
-          }
-          &--black {
-            font-family: $fontArial;
-            font-style: normal;
-            font-weight: normal;
-            line-height: 31px;
-            font-size: 30px;
-            color: $black;
-            width: 16rem;
-            margin: -1.1rem 0.8rem;
-            text-align: left;
+        .info {
+          text-align: center;
+          &__title {
+            &--gray {
+              font-weight: bold;
+              font-size: 88px;
+              letter-spacing: -0.05em;
+              font-family: "Trebuchet MS";
+              font-style: normal;
+              line-height: normal;
+              position: relative;
+              z-index: 2;
+              color: $gray;
+              display: block;
+              margin: 0 auto;
+              text-align: center;
+              text-transform: uppercase;
+            }
+            &--black {
+              font-family: $fontArial;
+              font-style: normal;
+              font-weight: normal;
+              line-height: 31px;
+              font-size: 30px;
+              color: $black;
+              margin: -1.1rem 0.8rem;
+              text-align: center;
+              display: block;
+              margin: 0 auto;
+            }
           }
         }
       }
@@ -142,6 +158,12 @@
         margin: 2.1rem 0;
         .info {
           &__ {
+            &titles {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin: 0 auto;
+            }
             &title {
               &-- {
                 &black {
@@ -170,6 +192,7 @@
             }
             &stars {
               margin: 0 1.8rem;
+              text-align: center;
             }
           }
         }
