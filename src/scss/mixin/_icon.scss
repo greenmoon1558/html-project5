@@ -8,3 +8,8 @@
     background: url("../img/social.svg##{$property}-active") center center no-repeat;
   }
 }
+@mixin icon-white($property) {
+  .icon__#{$property} {
+    background: url("../img/social.svg##{$property}-white") center center no-repeat;
+  }
+}

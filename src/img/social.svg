@@ -23,34 +23,25 @@
     
     <view id="facebook" width="15" height="15" viewBox="0 0 15 15"/>
     <view id="google-plus" width="15" height="15" viewBox="0 15 15 15"/>
-    <view id="twitter" width="15" height="15" viewBox="0 30 15 15"/>
-    <view id="linkedin" width="15" height="15" viewBox="0 45 15 15 "/>
-    <view id="dribble" width="15" height="15" viewBox="0 60 15 15"/>
-    <view id="pinterest" width="15" height="15" viewBox="0 75 15 15"/>
-    <view id="instagram" width="15" height="15" viewBox="0 90 15 15"/>
+    <view id="instagram" width="15" height="15" viewBox="0 30 15 15"/>
 
-     <view id="facebook-active" width="15" height="15" viewBox="0 105 15 15"/>
-    <view id="google-plus-active" width="15" height="15" viewBox="0 120 15 15"/>
-    <view id="twitter-active" width="15" height="15" viewBox="0 135 15 15"/>
-    <view id="linkedin-active" width="15" height="15" viewBox="0 150 15 15 "/>
-    <view id="dribble-active" width="15" height="15" viewBox="0 165 15 15"/>
-    <view id="pinterest-active" width="15" height="15" viewBox="0 180 15 15"/>
-    <view id="instagram-active" width="15" height="15" viewBox="0 195 15 15"/>
+     <view id="facebook-active" width="15" height="15" viewBox="0 45 15 15"/>
+    <view id="google-plus-active" width="15" height="15" viewBox="0 60 15 15"/>
+    <view id="instagram-active" width="15" height="15" viewBox="0 75 15 15"/>
+    <view id="facebook-white" width="15" height="15" viewBox="0 90 15 15"/>
+    <view id="google-plus-white" width="15" height="15" viewBox="0 105 15 15"/>
+    <view id="instagram-white" width="15" height="15" viewBox="0 120 15 15"/>
 
     <use xlink:href="#facebook-icon" fill="#00BFF3" width="15" height="15" x="0" y="0"></use>
      <use xlink:href="#google-plus-icon" fill="#00BFF3" width="15" height="15" x="0" y="15"></use>
-     <use xlink:href="#twitter-icon" fill="#00BFF3" width="15" height="15" x="0" y="30"></use>
-     <use xlink:href="#linkedin-icon" fill="#00BFF3" width="15" height="15" x="0" y="45"></use>
-     <use xlink:href="#dribble-icon" fill="#00BFF3" width="15" height="15" x="0" y="60"></use>
-     <use xlink:href="#pinterest-icon" fill="#00BFF3" width="15" height="15" x="0" y="75"></use>
-     <use xlink:href="#instagram-icon" fill="#00BFF3" width="15" height="15" x="0" y="90"></use>
+     <use xlink:href="#instagram-icon" fill="#00BFF3" width="15" height="15" x="0" y="30"></use>
 
-     <use xlink:href="#facebook-icon" fill="rgb(23, 78, 197)" width="15" height="15" x="0" y="105"></use>
-     <use xlink:href="#google-plus-icon" fill="#CE3525" width="15" height="15" x="0" y="120"></use>
-     <use xlink:href="#twitter-icon" fill="#4AB3F4" width="15" height="15" x="0" y="135"></use>
-     <use xlink:href="#linkedin-icon" fill="#0274B3" width="15" height="15" x="0" y="150"></use>
-     <use xlink:href="#dribble-icon" fill="#EA4C89" width="15" height="15" x="0" y="165"></use>
-     <use xlink:href="#pinterest-icon" fill="#E8334E" width="15" height="15" x="0" y="180"></use>
-     <use xlink:href="#instagram-icon" fill="#FA2148" width="15" height="15" x="0" y="195"></use>
+     <use xlink:href="#facebook-icon" fill="rgb(23, 78, 197)" width="15" height="15" x="0" y="45"></use>
+     <use xlink:href="#google-plus-icon" fill="#CE3525" width="15" height="15" x="0" y="60"></use>
+     <use xlink:href="#instagram-icon" fill="#FA2148" width="15" height="15" x="0" y="75"></use>
+
+    <use xlink:href="#facebook-icon" fill="#fff" width="15" height="15" x="0" y="90"></use>
+     <use xlink:href="#google-plus-icon" fill="#fff" width="15" height="15" x="0" y="105"></use>
+     <use xlink:href="#instagram-icon" fill="#fff" width="15" height="15" x="0" y="120"></use>
 
 </svg>

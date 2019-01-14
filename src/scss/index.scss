@@ -12,6 +12,9 @@ html {
 @import "./includes/header";
 @import "./includes/index/block_1";
 @import "./includes/index/block_2";
+@import "./includes/index/block_3";
+@import "./includes/footer";
+
 .test__img {
   background: #fff0 url(../../test/index.png) no-repeat 0px 0px;
   opacity: 0.5;
@@ -19,7 +22,7 @@ html {
   top: 0px;
   z-index: 1;
   position: absolute;
-  height: 2600px;
+  height: 2800px;
 }
 
 * {

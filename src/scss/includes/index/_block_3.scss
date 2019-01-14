@@ -1,0 +1,152 @@
+.block_3 {
+  &__ {
+    &title--main {
+      font-family: "Trebuchet MS";
+      font-style: normal;
+      font-weight: bold;
+      line-height: 5.2rem;
+      font-size: 5rem;
+      margin: 4rem 0 2.7rem;
+      max-width: 91rem;
+      word-wrap: break-word;
+    }
+    &article {
+      display: flex;
+      align-items: flex-start;
+      margin: 0 0 4rem;
+      &--left {
+        margin-right: 3.5rem;
+      }
+      &--right {
+        position: relative;
+        top: 14.25rem;
+        min-width: 22.75rem;
+        .block_3__text {
+          &--main {
+            margin: 0;
+            font-family: "Trebuchet MS";
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            font-size: 10rem;
+            color: $gray;
+            letter-spacing: -0.05em;
+          }
+          &--bold,
+          &--gray {
+            margin: 0.7rem 0.3rem 0.8rem;
+            font-family: $fontArial;
+            font-style: normal;
+            font-weight: 400;
+          }
+          &--bold {
+            line-height: 3.1rem;
+            font-size: 3rem;
+            color: $black;
+          }
+          &--gray {
+            line-height: 2.5rem;
+            font-size: 2rem;
+            color: $gray;
+          }
+        }
+      }
+    }
+    &text,
+    &item {
+      font-family: $fontArial;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.95rem;
+      font-size: 1.4rem;
+      margin: 0 0 1.65rem;
+      &--bold {
+        font-weight: 700;
+        font-family: $fontArial;
+        font-style: normal;
+        line-height: 1.9rem;
+        font-size: 1.4rem;
+        margin: 0 0 1.6rem;
+      }
+    }
+    &title {
+      font-family: $fontArial;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      font-size: 2.2rem;
+      margin: 2.75rem 0 0.5rem;
+      &--min {
+        font-size: 1.6rem;
+        margin: 2.2rem 0 0.5rem;
+      }
+    }
+    &comment {
+      font-family: $fontArial;
+      font-style: italic;
+      font-weight: normal;
+      line-height: 1.95rem;
+      font-size: 1.4rem;
+      border: none;
+      border-left: 0.8rem solid $blue;
+      margin: 2.5rem 4.75rem;
+      padding: 1.2rem 1.7rem;
+    }
+    &table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 3.25rem 0;
+    }
+    &cell {
+      height: 3rem;
+      width: 17.75%;
+      font-family: $fontArial;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      font-size: 1.4rem;
+      vertical-align: bottom;
+      &--header {
+        height: 3.6rem;
+        padding: 0;
+        vertical-align: middle;
+      }
+      &--header,
+      &--bold {
+        font-weight: 700;
+        text-align: left;
+      }
+      &--bold {
+        width: 14.75%;
+        padding-left: 1rem;
+      }
+      &--end {
+        width: 0%;
+      }
+    }
+    &row {
+      background-color: transparent;
+      &--header {
+        background-color: rgba($gray, 0.2);
+        border: 0 solid rgba($gray, 0.2);
+      }
+    }
+    &list {
+      position: relative;
+      padding-left: 2.75rem;
+      margin: 0;
+      list-style-type: none;
+      li:before {
+        content: "—";
+        position: absolute;
+        left: 1rem;
+      }
+    }
+    &item{
+        margin: 0 0 0.4rem;
+    }
+  }
+  .list--prev{
+      margin: 0 0 0.25rem;
+  }
+}
